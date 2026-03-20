@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikee Dorol | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+
+<body class="text-white font-sans bg-black">
+
+  <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between gap-4">
+      <a href="#home" class="text-3xl font-extrabold tracking-tight">MD</a>
+
+      <nav class="hidden md:flex items-center gap-2 bg-white/10 border border-white/10 rounded-2xl px-2 py-2">
+        <a href="#about" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">About</a>
+        <a href="#services" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Services</a>
+        <a href="#process" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Process</a>
+        <a href="#projects" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Projects</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden md:inline-flex px-7 py-3 bg-white text-black font-semibold rounded-2xl hover:bg-gray-200 transition">
+        Get in Touch
+      </a>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl border border-white/20 bg-white/5" aria-label="Open menu">
+        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-6 border-t border-white/10">
+      <nav class="flex flex-col gap-1 pt-4">
+        <a href="#about" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">About</a>
+        <a href="#services" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Services</a>
+        <a href="#process" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Process</a>
+        <a href="#projects" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Projects</a>
+        <a href="#contact" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Contact</a>
+        <a href="#contact" class="mt-2 px-4 py-3 bg-white text-black font-semibold rounded-xl text-sm text-center hover:bg-gray-200 transition">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="relative min-h-screen overflow-hidden pt-32">
+    <!-- Mesh gradient background -->
+    <div class="hero-gradient-bg">
+      <div class="hero-orb-1"></div>
+      <div class="hero-orb-2"></div>
+      <div class="hero-orb-3"></div>
+      <div class="hero-orb-4"></div>
+    </div>
+
+    <div class="hero-content relative max-w-4xl mx-auto px-6 py-24 text-center">
+      <div>
+        <p class="uppercase tracking-widest text-sm text-gray-400 mb-4">Hi, there!</p>
+
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
+          I build <span class="text-white">modern, responsive websites</span><br />
+          designed for <span class="text-gray-300">real-world use</span>
+        </h1>
+
+        <p class="text-gray-400 max-w-2xl mx-auto mb-8 leading-8">I build modern and responsive websites that are clean, fast, and easy to use. My goal is to create websites that not only look good but also help businesses, students, and personal brands present their work clearly online.</p>
+
+        <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mb-10">
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Tailwind</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Bootstrap</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">React</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Next.js</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">TypeScript</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Figma</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Canva</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">GitHub</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Supabase</span>
+          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Vercel</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-4">
+          <a href="#projects" class="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
+            View My Work
+          </a>
+
+          <a href="#contact" class="px-8 py-3 border border-white/30 rounded-full hover:bg-white hover:text-black transition">
+            Let’s Work Together
+          </a>
+        </div>
+
+        <div class="flex justify-center gap-12 mt-14 text-sm text-gray-400">
+          <div>
+            <p class="text-white font-semibold text-lg">10</p>
+            <p>Months Learning & Building</p>
+          </div>
+          <div>
+            <p class="text-white font-semibold text-lg">4</p>
+            <p>Practice & Personal Projects</p>
+          </div>
+          <div>
+            <p class="text-white font-semibold text-lg">100%</p>
+            <p>Self-Built Code</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </section>
+
+  <section id="about" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+    <div class="max-w-3xl">
+      <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">About</p>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">I design and build websites that are clean, usable, and conversion-focused.</h2>
+      <p class="text-gray-400 leading-8">
+        I help brands, students, and small businesses create websites that look modern, feel smooth,
+        and work well across devices. My focus is not only on visuals, but also on structure,
+        user flow, and real usability.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+    <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Services</p>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">What I can help you with</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
+        <h3 class="text-xl font-semibold mb-3">Landing Pages</h3>
+        <p class="text-gray-400">Modern pages for personal brands, products, and businesses focused on clarity and strong first impressions.</p>
+      </div>
+      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
+        <h3 class="text-xl font-semibold mb-3">UI Design</h3>
+        <p class="text-gray-400">Clean layouts, better content hierarchy, and polished interfaces designed for web and mobile responsiveness.</p>
+      </div>
+      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
+        <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+        <p class="text-gray-400">Responsive builds using HTML, CSS, JavaScript, Tailwind, and React with attention to detail and smooth UX.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+    <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Process</p>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-10">How I work</h2>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="p-6 rounded-3xl border border-white/10">
+        <p class="text-white/50 text-sm mb-3">01</p>
+        <h3 class="font-semibold text-lg mb-2">Discuss</h3>
+        <p class="text-gray-400 text-sm leading-7">We talk about your goals, target users, and the kind of website you need.</p>
+      </div>
+      <div class="p-6 rounded-3xl border border-white/10">
+        <p class="text-white/50 text-sm mb-3">02</p>
+        <h3 class="font-semibold text-lg mb-2">Plan</h3>
+        <p class="text-gray-400 text-sm leading-7">I map the layout, content flow, and visual direction before building.</p>
+      </div>
+      <div class="p-6 rounded-3xl border border-white/10">
+        <p class="text-white/50 text-sm mb-3">03</p>
+        <h3 class="font-semibold text-lg mb-2">Build</h3>
+        <p class="text-gray-400 text-sm leading-7">Your site is developed to be responsive, clean, and easy to use on all devices.</p>
+      </div>
+      <div class="p-6 rounded-3xl border border-white/10">
+        <p class="text-white/50 text-sm mb-3">04</p>
+        <h3 class="font-semibold text-lg mb-2">Refine</h3>
+        <p class="text-gray-400 text-sm leading-7">I polish details, improve spacing and UX, and prepare the final version for launch.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+    <div class="flex items-center justify-center gap-5 mb-12">
+      <div class="w-16 h-1 bg-white rounded-full"></div>
+      <p class="text-3xl sm:text-5xl font-extrabold tracking-tight">Projects</p>
+    </div>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-14 leading-8">
+      Here are some of the websites I designed and developed. Each project focuses on clean design,
+      responsive layout, and a smooth user experience across different screen sizes.
+    </p>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="proj-card">
+        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 60%, #e8d5c4 100%);">
+          <img src="./images/refinedbuild.png" alt="Refined Build Construction Website" />
+        </div>
+        <div class="proj-body">
+          <p class="proj-featured-label">Featured Project</p>
+          <h3 class="proj-title">Refined Build Construction Website</h3>
+          <p class="proj-desc">A sleek corporate website for a construction brand with clean layout, bold typography, and conversion-focused design to attract and engage potential clients.</p>
+          <div class="proj-stack">
+            <span>Next.js</span><span>React</span><span>Typescript</span><span>Vite</span>
+            <span>Tailwind CSS</span><span>Framer Motion</span><span>React Router</span>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
+            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
+            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
+            <div class="proj-actions">
+              <a href="https://refined-build.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
+              <a href="case-study/refined-build.html" class="btn-case">Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2015 60%, #e8c97a 100%);">
+          <img src="/images/haven.png" alt="Haven Real Estate Website" />
+        </div>
+        <div class="proj-body">
+          <p class="proj-featured-label">Featured Project</p>
+          <h3 class="proj-title">Haven Real Estate Website</h3>
+          <p class="proj-desc">Haven is a premium real estate platform crafted to showcase beautiful homes and connect people with their perfect living space. Built with a modern and responsive design for a smooth experience on desktop, tablet, and mobile.</p>
+          <div class="proj-stack">
+            <span>Next.js</span><span>React</span><span>Typescript</span>
+            <span>Tailwind CSS</span><span>Framer Motion</span>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
+            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
+            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
+            <div class="proj-actions">
+              <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
+              <a href="/case-study/haven.html" class="btn-case">Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 60%, #7c7cff 100%);">
+          <img src="./images/b.png" alt="B Construction Website" />
+        </div>
+        <div class="proj-body">
+          <p class="proj-featured-label">Featured Project</p>
+          <h3 class="proj-title">Contruction Company Website</h3>
+          <p class="proj-desc">A sleek corporate website for a construction brand — clean layout, bold typography, and conversion-focused design to attract and engage potential clients.</p>
+          <div class="proj-stack">
+            <span>Next.js</span><span>React</span><span>Typescript</span>
+            <span>Scheme-First</span><span>Zod</span>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
+            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
+            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
+            <div class="proj-actions">
+              <a href="https://construction-site-green.vercel.app/" target="_blank"    class="btn-live">Live Preview</a>
+              <a href="./case-study/buildco.html" class="btn-case">Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a0d00 60%, #c8860a 100%);">
+          <img src="./images/aroma-co.png" alt="Aroma & Co Website" />
+        </div>
+        <div class="proj-body">
+          <p class="proj-featured-label">Featured Project</p>
+          <h3 class="proj-title">Aroma &amp; Co Website</h3>
+          <p class="proj-desc">A restaurant and cafe management website concept crafted to present menu highlights, brand personality, and a visually rich food experience for online visitors.</p>
+          <div class="proj-stack">
+            <span>HTML</span><span>CSS</span><span>Javascript</span>
+            <span>Supabase</span>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
+            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
+            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
+            <div class="proj-actions">
+              <a href="https://aroma-co.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
+              <a href="./case-study/aromaco.html" class="btn-case">Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
+    <div class="max-w-3xl">
+      <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Contact</p>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Let’s build something solid together.</h2>
+      <p class="text-gray-400 mb-8">Have a project, redesign, or idea in mind? Let’s talk about how I can help.</p>
+      <a href="/cdn-cgi/l/email-protection#6a13051f182a0f070b030644090507" class="inline-flex px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">Send an Email</a>
+    </div>
+    <script src="script.js"></script>
+</body>
