@@ -3,206 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haven Real Estate — Case Study | Mikee Dorol</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Haven | Case study | Mikee Dorol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../case-study.css" />
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav>
-    <a href="/index.html" class="nav-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Back to Portfolio
-    </a>
-    <span class="nav-label">Case Study</span>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-noise"></div>
-    <div class="hero-inner">
-      <div class="hero-tag">Case Study — 02</div>
-      <h1 class="hero-title">
-        Haven<br/>
-        <em>Real Estate</em>
-      </h1>
-      <div class="hero-meta">
-        <div class="meta-item">
-          <p>Client</p>
-          <p>Haven Real Estate</p>
-        </div>
-        <div class="meta-item">
-          <p>Role</p>
-          <p>UI/UX Designer & Frontend Developer</p>
-        </div>
-        <div class="meta-item">
-          <p>Stack</p>
-          <p>Next.js · React · TypeScript · Tailwind CSS</p>
-        </div>
-        <div class="meta-item">
-          <p>Focus</p>
-          <p>Premium Feel · Property Listings · Search UX</p>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="brand">Mikee Dorol</a>
+      <a href="../index.html#projects" class="back">Back to projects</a>
     </div>
-  </section>
+  </header>
 
-  <!-- OVERVIEW -->
-  <div class="section fade-up">
-    <div class="section-label">Overview</div>
-    <h2 class="section-title">Where luxury meets listings.</h2>
-    <p class="section-body">
-      Haven is a premium real estate platform built to showcase beautiful homes and connect people with their perfect living space. The challenge was to make property browsing feel elevated — not transactional — while keeping the user experience smooth and intuitive across all devices.
-    </p>
-    <div class="overview-grid">
-      <div class="overview-cell">
-        <p class="overview-cell-label">Industry</p>
-        <p class="overview-cell-value">Real Estate & Property Development</p>
+  <main>
+    <section class="hero cs-hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="cs-kind">Case study: Real estate website</p>
+          <h1>Haven</h1>
+          <p class="lead">A premium real estate site concept. I wanted browsing homes to feel closer to a magazine than a spreadsheet, while keeping search quick.</p>
+          <div class="actions">
+            <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="#process" class="btn btn-ghost">How I built it</a>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt>Type</dt><dd>Personal practice project</dd></div>
+          <div><dt>Role</dt><dd>Designer and frontend developer</dd></div>
+          <div><dt>Stack</dt><dd>Next.js, React, TypeScript, Tailwind CSS</dd></div>
+          <div><dt>Focus</dt><dd>Listings, search and filter UX</dd></div>
+        </dl>
       </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Project Type</p>
-        <p class="overview-cell-value">Premium Real Estate Platform — Full Design & Development</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Timeline</p>
-        <p class="overview-cell-value">Design to deployment, iterative build process</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Deliverables</p>
-        <p class="overview-cell-value">Responsive website · Property listings UI · Search & filter · Live deployment via Vercel</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- CHALLENGE -->
-  <div class="section fade-up">
-    <div class="section-label">The Challenge</div>
-    <h2 class="section-title">Making real estate feel premium.</h2>
-    <div class="challenge-layout">
-      <div class="challenge-quote">
-        "Most real estate sites feel like spreadsheets. Haven needed to feel like a lifestyle — aspirational, beautiful, and still easy to use."
-      </div>
-      <div class="section-body" style="max-width: 100%;">
-        <p style="margin-bottom: 1rem;">Real estate websites often prioritize data over experience — cramming in listings, filters, and prices without any sense of brand or emotion. Haven needed to be different.</p>
-        <p style="margin-bottom: 1rem;">The goal was to design a platform that made browsing properties feel like flipping through a luxury magazine — while still surfacing the right listings quickly through smart search and filter UX.</p>
-        <p>Every visual decision had to earn its place: <span style="font-weight: 500;">does this make the property feel more desirable, or does it get in the way?</span></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SCREENSHOTS -->
-  <div class="section fade-up">
-    <div class="section-label">Visual Design</div>
-    <h2 class="section-title">Sections of the site.</h2>
-    <p class="section-body">Key screens from the Haven platform — hero, listings, and property detail.</p>
-    <div class="screenshot-slots">
-      <div class="screenshot-slot">
-        <img src="../images/hero-img-haven.png" alt="Haven Hero" onerror="this.style.display='none'">
-        <span class="slot-label">Hero Section</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="../images/properties-img-haven.png" alt="Haven Listings" onerror="this.style.display='none'">
-        <span class="slot-label">Property Listings</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="../images/mobile-ver-haven.png" alt="Haven Mobile" onerror="this.style.display='none'">
-        <span class="slot-label">Mobile View</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="section fade-up">
-    <div class="section-label">Process</div>
-    <h2 class="section-title">How I approached it.</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-num">01</span>
-        <div class="step-content">
-          <h3>Research & Visual Direction</h3>
-          <p>Studied premium real estate brands and luxury hospitality websites to understand what made them feel high-end. Identified key patterns: generous whitespace, large photography, restrained typography, and muted warm palettes. Built a visual direction around these principles.</p>
+    <section class="section">
+      <div class="wrap split">
+        <h2>The challenge</h2>
+        <div class="prose">
+          <p class="quote">Most real estate sites feel like spreadsheets. Haven needed to feel aspirational and still be easy to use.</p>
+          <h3 style="margin-bottom:12px">Making real estate feel premium.</h3>
+          <p>Real estate sites often cram in listings, filters and prices with no sense of brand. I wanted each listing to lead with its photography and still surface the right homes fast.</p><p>Each visual choice had to answer one question: does this make the property more desirable, or does it get in the way?</p>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">02</span>
-        <div class="step-content">
-          <h3>Information Architecture & Search UX</h3>
-          <p>Mapped out how a buyer actually searches for a home — by location, price, type, and features. Designed a filter system that felt natural and unobtrusive, surfacing the right properties without making the interface feel clinical or overwhelming.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="shots-band" style="background:linear-gradient(135deg,#1a1a1a 0%,#2a2015 60%,#e8c97a 100%)"><div class="shots"><figure><img src="../images/hero-img-haven.png" alt="Haven hero section" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Hero section</figcaption></figure><figure><img src="../images/properties-img-haven.png" alt="Haven property listings" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Property listings</figcaption></figure><figure><img src="../images/mobile-ver-haven.png" alt="Haven mobile view" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Mobile view</figcaption></figure></div></div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="wrap split"><h2>Process</h2><ol class="steps"><li><h3>Research and direction</h3><p>I studied premium real estate and hospitality sites and noted what makes them feel high-end: whitespace, large photos, restrained type, warm palettes.</p></li><li><h3>Search and filter UX</h3><p>I mapped how a buyer searches (location, price, type, features) and designed filters that feel natural instead of clinical.</p></li><li><h3>Listing cards</h3><p>Each card leads with the image. Clear type hierarchy and consistent spacing keep browsing smooth. Built with Next.js and TypeScript.</p></li><li><h3>Responsive and deployment</h3><p>Mobile-first, since many property searches happen on phones. I tuned image sizes and card layouts per breakpoint and deployed to Vercel.</p></li></ol></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>Tech stack</h2><ul class="tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Framer Motion</li><li>Vercel</li><li>Figma</li></ul></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>What I delivered</h2><ul class="outcome"><li>A responsive listings site for mobile, tablet and desktop</li><li>Search and filter interactions designed to stay unobtrusive</li><li>Deployed and live on Vercel</li></ul></div>
+    </section>
+
+    <section class="section cs-cta">
+      <div class="wrap">
+        <div class="ojt">
+          <div><h2>See it live</h2><p>Open the deployed project or go back to my other work.</p></div>
+          <div class="links">
+            <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+          </div>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">03</span>
-        <div class="step-content">
-          <h3>Property Listing UI</h3>
-          <p>Each listing card was designed to lead with the image — letting the home speak first. Subtle hover states, clean typography hierarchy, and consistent spacing made browsing feel smooth and intentional. Built using Next.js with TypeScript for a scalable component structure.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <span class="step-num">04</span>
-        <div class="step-content">
-          <h3>Responsive Design & Deployment</h3>
-          <p>Optimized for mobile-first browsing — most property searches happen on phones. Fine-tuned image sizing, card layouts, and filter interactions across breakpoints. Deployed to Vercel with performance optimization for fast image loading.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <!-- TECH STACK -->
-  <div class="section fade-up">
-    <div class="section-label">Tech Stack</div>
-    <h2 class="section-title">Built with the right tools.</h2>
-    <p class="section-body">Chosen for performance, scalability, and a smooth developer experience.</p>
-    <div class="stack-grid">
-      <span class="stack-tag">Next.js</span>
-      <span class="stack-tag">React</span>
-      <span class="stack-tag">TypeScript</span>
-      <span class="stack-tag">Tailwind CSS</span>
-      <span class="stack-tag">Framer Motion</span>
-      <span class="stack-tag">Vercel</span>
-      <span class="stack-tag">Figma</span>
-    </div>
-  </div>
-
-  <!-- RESULTS -->
-  <div class="section fade-up">
-    <div class="section-label">Outcome</div>
-    <h2 class="section-title">What was delivered.</h2>
-    <p class="section-body">A fully responsive, premium real estate platform with intuitive property search and a luxury visual identity.</p>
-    <div class="results-grid">
-      <div class="result-cell">
-        <div class="result-num">100%</div>
-        <div class="result-label">Responsive across mobile, tablet, and desktop</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">4+</div>
-        <div class="result-label">Search & filter interactions designed for ease of use</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">Live</div>
-        <div class="result-label">Deployed on Vercel with optimized image loading</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-section fade-up">
-    <div class="cta-text">
-      <h2>See it live.</h2>
-      <p>Visit the deployed project or go back to the full portfolio.</p>
-    </div>
-    <div class="cta-links">
-      <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" class="btn-primary">
-        Live Preview
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
-      <a href="/index.html" class="btn-secondary">← Back to Portfolio</a>
-    </div>
-  </div>
-
-  <script src="../script.js">
-  </script>
+  <footer class="footer"><div class="wrap">© 2026 Mikee Dorol. Designed and coded by me.</div></footer>
 </body>
 </html>

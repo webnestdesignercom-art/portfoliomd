@@ -3,290 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mikee Dorol | Web Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Mikee Dorol | Student Web Developer</title>
+  <meta name="description" content="Portfolio of Mikee Dorol, a student web developer looking for an OJT placement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  
 </head>
+<body>
 
-<body class="text-white font-sans bg-black">
-
-  <header class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between gap-4">
-      <a href="#home" class="text-3xl font-extrabold tracking-tight">MD</a>
-
-      <nav class="hidden md:flex items-center gap-2 bg-white/10 border border-white/10 rounded-2xl px-2 py-2">
-        <a href="#about" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">About</a>
-        <a href="#services" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Services</a>
-        <a href="#process" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Process</a>
-        <a href="#projects" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Projects</a>
-        <a href="#contact" class="px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Contact</a>
-      </nav>
-
-      <a href="#contact" class="hidden md:inline-flex px-7 py-3 bg-white text-black font-semibold rounded-2xl hover:bg-gray-200 transition">
-        Get in Touch
-      </a>
-
-      <!-- Hamburger -->
-      <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-xl border border-white/20 bg-white/5" aria-label="Open menu">
-        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
-        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
-        <span class="hamburger-line block w-5 h-0.5 bg-white transition-all duration-300"></span>
-      </button>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-6 pb-6 border-t border-white/10">
-      <nav class="flex flex-col gap-1 pt-4">
-        <a href="#about" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">About</a>
-        <a href="#services" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Services</a>
-        <a href="#process" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Process</a>
-        <a href="#projects" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Projects</a>
-        <a href="#contact" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition">Contact</a>
-        <a href="#contact" class="mt-2 px-4 py-3 bg-white text-black font-semibold rounded-xl text-sm text-center hover:bg-gray-200 transition">Get in Touch</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#home" class="brand">Mikee Dorol</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#ojt">OJT</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="relative min-h-screen overflow-hidden pt-32">
-    <!-- Mesh gradient background -->
-    <div class="hero-gradient-bg">
-      <div class="hero-orb-1"></div>
-      <div class="hero-orb-2"></div>
-      <div class="hero-orb-3"></div>
-      <div class="hero-orb-4"></div>
-    </div>
-
-    <div class="hero-content relative max-w-4xl mx-auto px-6 py-24 text-center">
-      <div>
-        <p class="uppercase tracking-widest text-sm text-gray-400 mb-4">Hi, there!</p>
-
-        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight mb-6">
-          I build <span class="text-white">modern, responsive websites</span><br />
-          designed for <span class="text-gray-300">real-world use</span>
-        </h1>
-
-        <p class="text-gray-400 max-w-2xl mx-auto mb-8 leading-8">I build modern and responsive websites that are clean, fast, and easy to use. My goal is to create websites that not only look good but also help businesses, students, and personal brands present their work clearly online.</p>
-
-        <div class="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto mb-10">
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Tailwind</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Bootstrap</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">React</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Next.js</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">TypeScript</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Figma</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Canva</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">GitHub</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Supabase</span>
-          <span class="px-4 py-1.5 border border-white/30 rounded-full text-sm text-white/90">Vercel</span>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Hi, I'm Mikee. I'm a student who builds responsive websites.</h1>
+          <p class="lead">
+            I've spent the past 10 months learning web development by building real projects, from
+            landing pages to a small app with a database. I'm looking for an OJT where I can learn
+            from a dev team and contribute to real work.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">See my projects</a>
+            <a href="mailto:mikeedorol0@gmail.com" class="btn btn-ghost">Email me</a>
+          </div>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-4">
-          <a href="#projects" class="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
-            View My Work
-          </a>
+        <dl class="facts">
+          <div><dt>Status</dt><dd class="status">Open for OJT</dd></div>
+          <div><dt>Course</dt><dd>BSIT, Pamantasan ng Lungsod ng Muntinlupa</dd></div>
+          <div><dt>Focus</dt><dd>Frontend development</dd></div>
+          <div><dt>Learning for</dt><dd>10 months</dd></div>
+          <div><dt>Projects built</dt><dd>4</dd></div>
+        </dl>
+      </div>
+    </section>
 
-          <a href="#contact" class="px-8 py-3 border border-white/30 rounded-full hover:bg-white hover:text-black transition">
-            Let’s Work Together
-          </a>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap split">
+        <h2>About me</h2>
+        <div class="prose">
+          <p>
+            I'm a 4th Year BS Information Technology student. I got into web development because I like seeing
+            something I designed turn into a page that people can actually open and use.
+          </p>
+          <p>
+            Most of what I know came from building. I start in Figma or on paper, code it with
+            React, Next.js and Tailwind, then deploy it on Vercel. Every project below is something I
+            made for practice, so I can show how I work and where I'm still improving.
+          </p>
+          <p>
+            For my OJT, I want to learn how a real team works: Git workflows, code reviews, and
+            shipping features that real users depend on.
+          </p>
         </div>
+      </div>
+    </section>
 
-        <div class="flex justify-center gap-12 mt-14 text-sm text-gray-400">
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap split">
+        <h2>Skills</h2>
+        <div class="skills">
           <div>
-            <p class="text-white font-semibold text-lg">10</p>
-            <p>Months Learning & Building</p>
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li>
+              <li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Framer Motion</li>
+            </ul>
           </div>
           <div>
-            <p class="text-white font-semibold text-lg">4</p>
-            <p>Practice & Personal Projects</p>
+            <h3>Backend and data</h3>
+            <ul class="tags">
+              <li>Supabase</li><li>Zod validation</li>
+            </ul>
           </div>
           <div>
-            <p class="text-white font-semibold text-lg">100%</p>
-            <p>Self-Built Code</p>
+            <h3>Tools and design</h3>
+            <ul class="tags">
+              <li>Git and GitHub</li><li>Vercel</li><li>Figma</li><li>Canva</li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
 
-      </div>
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-note">Personal and practice projects. Each one has a live demo and a short write-up of what I built and learned.</p>
 
-  <section id="about" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
-    <div class="max-w-3xl">
-      <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">About</p>
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">I design and build websites that are clean, usable, and conversion-focused.</h2>
-      <p class="text-gray-400 leading-8">
-        I help brands, students, and small businesses create websites that look modern, feel smooth,
-        and work well across devices. My focus is not only on visuals, but also on structure,
-        user flow, and real usability.
-      </p>
-    </div>
-  </section>
+        <div class="projects">
 
-  <section id="services" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
-    <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Services</p>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-10">What I can help you with</h2>
+          <article class="project">
+            <div class="shot" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 60%, #e8d5c4 100%);">
+              <img src="./images/refinedbuild.png" alt="Refined Build construction website" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Refined Build</h3>
+              <p class="kind">Construction company website</p>
+              <p>A corporate website concept with a clean layout and bold typography. I practiced page structure, animation with Framer Motion, and client-side routing.</p>
+              <ul class="tags tags-sm">
+                <li>Next.js</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>React Router</li>
+              </ul>
+              <div class="links">
+                <a href="https://refined-build.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+                <a href="./case-study/refined-build.html" class="btn btn-ghost">Case study</a>
+              </div>
+            </div>
+          </article>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <h3 class="text-xl font-semibold mb-3">Landing Pages</h3>
-        <p class="text-gray-400">Modern pages for personal brands, products, and businesses focused on clarity and strong first impressions.</p>
-      </div>
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <h3 class="text-xl font-semibold mb-3">UI Design</h3>
-        <p class="text-gray-400">Clean layouts, better content hierarchy, and polished interfaces designed for web and mobile responsiveness.</p>
-      </div>
-      <div class="p-7 rounded-3xl border border-white/10 bg-white/5">
-        <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
-        <p class="text-gray-400">Responsive builds using HTML, CSS, JavaScript, Tailwind, and React with attention to detail and smooth UX.</p>
-      </div>
-    </div>
-  </section>
+          <article class="project">
+            <div class="shot" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2015 60%, #e8c97a 100%);">
+              <img src="./images/haven.png" alt="Haven real estate website" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Haven</h3>
+              <p class="kind">Real estate website</p>
+              <p>A property listing site that works on desktop, tablet and mobile. I focused on responsive layouts and presenting a lot of image-heavy content clearly.</p>
+              <ul class="tags tags-sm">
+                <li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Framer Motion</li>
+              </ul>
+              <div class="links">
+                <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+                <a href="./case-study/haven.html" class="btn btn-ghost">Case study</a>
+              </div>
+            </div>
+          </article>
 
-  <section id="process" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
-    <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Process</p>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-10">How I work</h2>
+          <article class="project">
+            <div class="shot" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 60%, #7c7cff 100%);">
+              <img src="./images/b.png" alt="Construction company website" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>BuildCo</h3>
+              <p class="kind">Construction company website</p>
+              <p>A second construction site where I practiced validating form input with a schema-first approach, so bad data is caught before it is submitted.</p>
+              <ul class="tags tags-sm">
+                <li>Next.js</li><li>React</li><li>TypeScript</li><li>Zod</li>
+              </ul>
+              <div class="links">
+                <a href="https://construction-site-green.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+                <a href="./case-study/buildco.html" class="btn btn-ghost">Case study</a>
+              </div>
+            </div>
+          </article>
 
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="p-6 rounded-3xl border border-white/10">
-        <p class="text-white/50 text-sm mb-3">01</p>
-        <h3 class="font-semibold text-lg mb-2">Discuss</h3>
-        <p class="text-gray-400 text-sm leading-7">We talk about your goals, target users, and the kind of website you need.</p>
-      </div>
-      <div class="p-6 rounded-3xl border border-white/10">
-        <p class="text-white/50 text-sm mb-3">02</p>
-        <h3 class="font-semibold text-lg mb-2">Plan</h3>
-        <p class="text-gray-400 text-sm leading-7">I map the layout, content flow, and visual direction before building.</p>
-      </div>
-      <div class="p-6 rounded-3xl border border-white/10">
-        <p class="text-white/50 text-sm mb-3">03</p>
-        <h3 class="font-semibold text-lg mb-2">Build</h3>
-        <p class="text-gray-400 text-sm leading-7">Your site is developed to be responsive, clean, and easy to use on all devices.</p>
-      </div>
-      <div class="p-6 rounded-3xl border border-white/10">
-        <p class="text-white/50 text-sm mb-3">04</p>
-        <h3 class="font-semibold text-lg mb-2">Refine</h3>
-        <p class="text-gray-400 text-sm leading-7">I polish details, improve spacing and UX, and prepare the final version for launch.</p>
-      </div>
-    </div>
-  </section>
+          <article class="project">
+            <div class="shot" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a0d00 60%, #c8860a 100%);">
+              <img src="./images/aroma-co.png" alt="Aroma and Co cafe website" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Aroma &amp; Co</h3>
+              <p class="kind">Cafe website with a database</p>
+              <p>My first project that connects to a database. It shows menu highlights and was built with plain HTML, CSS and JavaScript, with Supabase for the data.</p>
+              <ul class="tags tags-sm">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Supabase</li>
+              </ul>
+              <div class="links">
+                <a href="https://aroma-co.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+                <a href="./case-study/aromaco.html" class="btn btn-ghost">Case study</a>
+              </div>
+            </div>
+          </article>
 
-  <section id="projects" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
-    <div class="flex items-center justify-center gap-5 mb-12">
-      <div class="w-16 h-1 bg-white rounded-full"></div>
-      <p class="text-3xl sm:text-5xl font-extrabold tracking-tight">Projects</p>
-    </div>
-    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-14 leading-8">
-      Here are some of the websites I designed and developed. Each project focuses on clean design,
-      responsive layout, and a smooth user experience across different screen sizes.
-    </p>
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <div class="proj-card">
-        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 60%, #e8d5c4 100%);">
-          <img src="./images/refinedbuild.png" alt="Refined Build Construction Website" />
         </div>
-        <div class="proj-body">
-          <p class="proj-featured-label">Featured Project</p>
-          <h3 class="proj-title">Refined Build Construction Website</h3>
-          <p class="proj-desc">A sleek corporate website for a construction brand with clean layout, bold typography, and conversion-focused design to attract and engage potential clients.</p>
-          <div class="proj-stack">
-            <span>Next.js</span><span>React</span><span>Typescript</span><span>Vite</span>
-            <span>Tailwind CSS</span><span>Framer Motion</span><span>React Router</span>
-          </div>
-          <div class="proj-meta">
-            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
-            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
-            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
-            <div class="proj-actions">
-              <a href="https://refined-build.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
-              <a href="case-study/refined-build.html" class="btn-case">Case Study</a>
+      </div>
+    </section>
+
+    <!-- OJT -->
+    <section id="ojt" class="section">
+      <div class="wrap">
+        <div class="ojt">
+          <h2>My OJT goals</h2>
+          <div class="ojt-grid">
+            <div>
+              <h3>What I can do</h3>
+              <p>Build responsive pages from a design, fix UI bugs, and connect a frontend to an API or Supabase.</p>
+            </div>
+            <div>
+              <h3>What I want to learn</h3>
+              <p>Working in a team with Git, writing cleaner and more maintainable code, and testing before release.</p>
+            </div>
+            <div>
+              <h3>Availability</h3>
+              <p>[Required hours] hours, starting [month, year]. Open to onsite, hybrid or remote.</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="proj-card">
-        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2015 60%, #e8c97a 100%);">
-          <img src="/images/haven.png" alt="Haven Real Estate Website" />
-        </div>
-        <div class="proj-body">
-          <p class="proj-featured-label">Featured Project</p>
-          <h3 class="proj-title">Haven Real Estate Website</h3>
-          <p class="proj-desc">Haven is a premium real estate platform crafted to showcase beautiful homes and connect people with their perfect living space. Built with a modern and responsive design for a smooth experience on desktop, tablet, and mobile.</p>
-          <div class="proj-stack">
-            <span>Next.js</span><span>React</span><span>Typescript</span>
-            <span>Tailwind CSS</span><span>Framer Motion</span>
-          </div>
-          <div class="proj-meta">
-            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
-            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
-            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
-            <div class="proj-actions">
-              <a href="https://haven-real-estate-beta.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
-              <a href="/case-study/haven.html" class="btn-case">Case Study</a>
-            </div>
-          </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap split">
+        <h2>Contact</h2>
+        <div class="prose">
+          <p>If your company is accepting OJT students, I'd be glad to share my resume or answer any questions.</p>
+          <p><a class="email" href="mailto:mikeedorol0@gmail.com">mikeedorol0@gmail.com</a></p>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="proj-card">
-        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 60%, #7c7cff 100%);">
-          <img src="./images/b.png" alt="B Construction Website" />
-        </div>
-        <div class="proj-body">
-          <p class="proj-featured-label">Featured Project</p>
-          <h3 class="proj-title">Contruction Company Website</h3>
-          <p class="proj-desc">A sleek corporate website for a construction brand — clean layout, bold typography, and conversion-focused design to attract and engage potential clients.</p>
-          <div class="proj-stack">
-            <span>Next.js</span><span>React</span><span>Typescript</span>
-            <span>Scheme-First</span><span>Zod</span>
-          </div>
-          <div class="proj-meta">
-            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
-            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
-            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
-            <div class="proj-actions">
-              <a href="https://construction-site-green.vercel.app/" target="_blank"    class="btn-live">Live Preview</a>
-              <a href="./case-study/buildco.html" class="btn-case">Case Study</a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <footer class="footer">
+    <div class="wrap">© 2026 Mikee Dorol. Designed and coded by me.</div>
+  </footer>
 
-      <div class="proj-card">
-        <div class="proj-mockup-wrap" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a0d00 60%, #c8860a 100%);">
-          <img src="./images/aroma-co.png" alt="Aroma & Co Website" />
-        </div>
-        <div class="proj-body">
-          <p class="proj-featured-label">Featured Project</p>
-          <h3 class="proj-title">Aroma &amp; Co Website</h3>
-          <p class="proj-desc">A restaurant and cafe management website concept crafted to present menu highlights, brand personality, and a visually rich food experience for online visitors.</p>
-          <div class="proj-stack">
-            <span>HTML</span><span>CSS</span><span>Javascript</span>
-            <span>Supabase</span>
-          </div>
-          <div class="proj-meta">
-            <div class="proj-meta-item"><p>UI/UX</p><p>Focus</p></div>
-            <div class="proj-meta-item"><p>Responsive</p><p>Layout</p></div>
-            <div class="proj-meta-item"><p>Modern</p><p>Style</p></div>
-            <div class="proj-actions">
-              <a href="https://aroma-co.vercel.app/" target="_blank" class="btn-live">Live Preview</a>
-              <a href="./case-study/aromaco.html" class="btn-case">Case Study</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/10">
-    <div class="max-w-3xl">
-      <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">Contact</p>
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Let’s build something solid together.</h2>
-      <p class="text-gray-400 mb-8">Have a project, redesign, or idea in mind? Let’s talk about how I can help.</p>
-      <a href="mailto:mikeedorol0@gmail.com" class="inline-flex px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">Send an Email</a>
-    </div>
-    <script src="script.js"></script>
 </body>
+</html>

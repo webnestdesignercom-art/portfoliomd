@@ -3,236 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GymFit — Case Study | Mikee Dorol</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>GymFit | Case study | Mikee Dorol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../case-study.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="brand">Mikee Dorol</a>
+      <a href="../index.html#projects" class="back">Back to projects</a>
+    </div>
+  </header>
 
-  <!-- NAV -->
-  <nav>
-    <a href="/index.html" class="nav-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Back to Portfolio
-    </a>
-    <span class="nav-label">Case Study</span>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-noise"></div>
-    <div class="hero-inner">
-      <div class="hero-tag">Case Study — 03</div>
-      <h1 class="hero-title">
-        GymFit<br/>
-        <em>Membership</em>
-      </h1>
-      <div class="hero-meta">
-        <div class="meta-item">
-          <p>Client</p>
-          <p>GymFit</p>
+  <main>
+    <section class="hero cs-hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="cs-kind">Case study: Gym membership website</p>
+          <h1>GymFit</h1>
+          <p class="lead">A bold, dark-themed gym site with tools members can actually use: a BMI calculator, a class schedule and a membership pricing modal.</p>
+          <div class="actions">
+            <a href="https://gymfit-nextjs.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="#process" class="btn btn-ghost">How I built it</a>
+          </div>
         </div>
-        <div class="meta-item">
-          <p>Role</p>
-          <p>UI/UX Designer & Frontend Developer</p>
-        </div>
-        <div class="meta-item">
-          <p>Stack</p>
-          <p>React · TypeScript · Vite · Tailwind CSS</p>
-        </div>
-        <div class="meta-item">
-          <p>Focus</p>
-          <p>Interactive Features · Membership UI · Bold Design</p>
-        </div>
+        <dl class="facts">
+          <div><dt>Type</dt><dd>Personal practice project</dd></div>
+          <div><dt>Role</dt><dd>Designer and frontend developer</dd></div>
+          <div><dt>Stack</dt><dd>React, TypeScript, Vite, Tailwind CSS</dd></div>
+          <div><dt>Focus</dt><dd>Interactive features, membership UI</dd></div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- OVERVIEW -->
-  <div class="section fade-up">
-    <div class="section-label">Overview</div>
-    <h2 class="section-title">A fitness brand built to motivate.</h2>
-    <p class="section-body">
-      GymFit needed more than just a website — it needed an experience that matched the energy and discipline of its members. The goal was to build a bold, dark-themed platform that showcased training programs, memberships, and interactive tools like a BMI calculator and class schedule.
-    </p>
-    <div class="overview-grid">
-      <div class="overview-cell">
-        <p class="overview-cell-label">Industry</p>
-        <p class="overview-cell-value">Fitness & Gym Membership</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Project Type</p>
-        <p class="overview-cell-value">Gym Website — Full Design & Development</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Timeline</p>
-        <p class="overview-cell-value">Design to deployment, iterative build process</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Deliverables</p>
-        <p class="overview-cell-value">Responsive website · BMI Calculator · Class Schedule · Membership Modal · Live Deployment</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- CHALLENGE -->
-  <div class="section fade-up">
-    <div class="section-label">The Challenge</div>
-    <h2 class="section-title">Building interactive features that actually work.</h2>
-    <div class="challenge-layout">
-      <div class="challenge-quote">
-        "A gym website needs to do more than look good — it needs to give members real tools: check their BMI, browse class schedules, and choose a plan that fits them."
-      </div>
-      <div class="section-body" style="max-width: 100%;">
-        <p style="margin-bottom: 1rem;">The biggest challenge wasn't the visual design — it was building interactive features that felt native to the brand and were actually useful to gym members.</p>
-        <p style="margin-bottom: 1rem;">The BMI calculator needed to be accurate, accessible, and visually integrated into the dark theme. The class schedule needed to be scannable at a glance. The membership modal needed to convert — not just inform.</p>
-        <p>Every interactive element had to feel <span style="font-weight: 500;">purposeful and polished</span>, not like an afterthought bolted onto a static page.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- KEY FEATURES -->
-  <div class="section fade-up">
-    <div class="section-label">Key Features</div>
-    <h2 class="section-title">What makes it work.</h2>
-    <div class="features-grid">
-      <div class="feature-cell">
-        <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
-        <h3>BMI Calculator</h3>
-        <p>Interactive calculator built into the site — users enter their height and weight and get an instant BMI reading with a visual indicator and health category label.</p>
-      </div>
-      <div class="feature-cell">
-        <div class="feature-icon"><i class="fa-solid fa-calendar"></i></div>
-        <h3>Class Schedule</h3>
-        <p>A scannable weekly class schedule showing session times, trainers, and class types — designed to help members plan their week without leaving the site.</p>
-      </div>
-      <div class="feature-cell">
-        <div class="feature-icon"><i class="fa-solid fa-credit-card"></i></div>
-        <h3>Membership Modal</h3>
-        <p>A clean pricing modal that presents membership tiers clearly — designed to guide visitors toward signing up with minimal friction and maximum clarity.</p>
-      </div>
-      <div class="feature-cell">
-        <div class="feature-icon"><i class="fa-solid fa-moon"></i></div>
-        <h3>Dark / Light Mode</h3>
-        <p>Full dark and light mode support — the dark theme leads with intensity and energy, while the light mode keeps the experience clean and accessible.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SCREENSHOTS -->
-  <div class="section fade-up">
-    <div class="section-label">Visual Design</div>
-    <h2 class="section-title">Sections of the site.</h2>
-    <p class="section-body">Key screens from GymFit — hero, BMI calculator, and membership section.</p>
-    <div class="screenshot-slots">
-      <div class="screenshot-slot">
-        <img src="../images/hero-gymfit-img.png" alt="GymFit Hero" onerror="this.style.display='none'">
-        <span class="slot-label">Hero Section</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="../images/programs-gymfit-img.png" alt="GymFit BMI Calculator" onerror="this.style.display='none'">
-        <span class="slot-label">Programs Section</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="../images/mobile-ver-gymfit.png" alt="GymFit Membership" onerror="this.style.display='none'">
-        <span class="slot-label">Mobile Version</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="section fade-up">
-    <div class="section-label">Process</div>
-    <h2 class="section-title">How I approached it.</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-num">01</span>
-        <div class="step-content">
-          <h3>Brand Direction & Visual Design</h3>
-          <p>Set a bold, dark-first visual direction using deep blacks, high-contrast typography, and orange accents to capture the energy and intensity of a serious fitness brand. Designed for impact on first load.</p>
+    <section class="section">
+      <div class="wrap split">
+        <h2>The challenge</h2>
+        <div class="prose">
+          <p class="quote">A gym site should do more than look good. It should let members check their BMI, browse classes and pick a plan.</p>
+          <h3 style="margin-bottom:12px">Interactive features that actually work.</h3>
+          <p>The biggest challenge wasn't the visuals. It was building interactive features that fit the brand and were useful.</p><p>The BMI calculator had to be accurate and match the dark theme, the schedule had to be scannable, and the membership modal had to guide people to a plan.</p>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">02</span>
-        <div class="step-content">
-          <h3>Interactive Feature Planning</h3>
-          <p>Mapped out the BMI calculator logic, class schedule data structure, and membership modal flow before writing any code. Defined the UX for each interactive component — how it behaves, what it shows, and how it fits into the overall page layout.</p>
+    </section>
+
+    <section class="section"><div class="wrap split"><h2>Key features</h2><div class="feature-list"><article><h3>BMI calculator</h3><p>Enter height and weight and get an instant reading with a category label.</p></article><article><h3>Class schedule</h3><p>A weekly schedule with times, trainers and class types, filterable by type.</p></article><article><h3>Membership modal</h3><p>Pricing tiers presented clearly, with plan comparison.</p></article><article><h3>Dark and light mode</h3><p>A toggle built with React state and Tailwind's dark mode utilities.</p></article></div></div></section>
+    <section class="section">
+      <div class="wrap">
+        <div class="shots-band" style="background:linear-gradient(135deg,#0d0d0d 0%,#1f1208 60%,#ff6b35 100%)"><div class="shots"><figure><img src="../images/hero-gymfit-img.png" alt="GymFit hero section" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Hero section</figcaption></figure><figure><img src="../images/programs-gymfit-img.png" alt="GymFit programs section" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Programs section</figcaption></figure><figure><img src="../images/mobile-ver-gymfit.png" alt="GymFit mobile view" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Mobile view</figcaption></figure></div></div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="wrap split"><h2>Process</h2><ol class="steps"><li><h3>Visual direction</h3><p>Deep blacks, high-contrast type and orange accents to match the intensity of a fitness brand.</p></li><li><h3>Plan the features</h3><p>I mapped the BMI logic, schedule data structure and modal flow before writing code.</p></li><li><h3>Build components</h3><p>React, TypeScript and Vite, with each feature as its own component.</p></li><li><h3>Themes and responsive</h3><p>Added dark and light mode, then tested every feature across breakpoints.</p></li></ol></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>Tech stack</h2><ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>React Router</li><li>Vercel</li><li>Figma</li></ul></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>What I delivered</h2><ul class="outcome"><li>Four interactive features: BMI calculator, class schedule, membership modal, theme toggle</li><li>Responsive across mobile, tablet and desktop</li><li>Deployed and live on Vercel</li></ul></div>
+    </section>
+
+    <section class="section cs-cta">
+      <div class="wrap">
+        <div class="ojt">
+          <div><h2>See it live</h2><p>Open the deployed project or go back to my other work.</p></div>
+          <div class="links">
+            <a href="https://gymfit-nextjs.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+          </div>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">03</span>
-        <div class="step-content">
-          <h3>Component Development</h3>
-          <p>Built using React + TypeScript with Vite for a fast, modular codebase. Each interactive feature was built as its own component — BMI calculator with real-time output, schedule with filterable class types, and membership modal with plan comparison.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <span class="step-num">04</span>
-        <div class="step-content">
-          <h3>Dark/Light Mode & Responsive Refinement</h3>
-          <p>Implemented full dark/light mode toggle using React state and Tailwind's dark mode utilities. Tested and refined all breakpoints across mobile, tablet, and desktop — ensuring every feature worked smoothly on any screen size.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <!-- TECH STACK -->
-  <div class="section fade-up">
-    <div class="section-label">Tech Stack</div>
-    <h2 class="section-title">Built with the right tools.</h2>
-    <p class="section-body">Chosen for component-based architecture, type safety, and fast development.</p>
-    <div class="stack-grid">
-      <span class="stack-tag">React</span>
-      <span class="stack-tag">TypeScript</span>
-      <span class="stack-tag">Vite</span>
-      <span class="stack-tag">Tailwind CSS</span>
-      <span class="stack-tag">Framer Motion</span>
-      <span class="stack-tag">Node.js</span>
-      <span class="stack-tag">React Router</span>
-      <span class="stack-tag">Vercel</span>
-      <span class="stack-tag">Figma</span>
-    </div>
-  </div>
-
-  <!-- RESULTS -->
-  <div class="section fade-up">
-    <div class="section-label">Outcome</div>
-    <h2 class="section-title">What was delivered.</h2>
-    <p class="section-body">A fully responsive, feature-rich gym website with interactive tools, bold visual identity, and dark/light mode support.</p>
-    <div class="results-grid">
-      <div class="result-cell">
-        <div class="result-num">4</div>
-        <div class="result-label">Interactive features — BMI calculator, class schedule, membership modal, dark/light mode</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">100%</div>
-        <div class="result-label">Responsive across mobile, tablet, and desktop</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">Live</div>
-        <div class="result-label">Deployed on Vercel with fast load performance</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-section fade-up">
-    <div class="cta-text">
-      <h2>See it live.</h2>
-      <p>Visit the deployed project or go back to the full portfolio.</p>
-    </div>
-    <div class="cta-links">
-      <a href="https://gymfit-nextjs.vercel.app/" target="_blank" class="btn-primary">
-        Live Preview
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
-      <a href="/index.html" class="btn-secondary">← Back to Portfolio</a>
-    </div>
-  </div>
-
-  <script src="../script.js"></script>
+  <footer class="footer"><div class="wrap">© 2026 Mikee Dorol. Designed and coded by me.</div></footer>
 </body>
 </html>

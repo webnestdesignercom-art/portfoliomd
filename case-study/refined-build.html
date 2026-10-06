@@ -3,208 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Refined Build — Case Study | Mikee Dorol</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Refined Build | Case study | Mikee Dorol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../case-study.css" />
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav>
-    <a href="/index.html" class="nav-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-      Back to Portfolio
-    </a>
-    <span class="nav-label">Case Study</span>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-noise"></div>
-    <div class="hero-inner">
-      <div class="hero-tag">Case Study — 01</div>
-      <h1 class="hero-title">
-        Refined Build<br/>
-        <em>Construction</em>
-      </h1>
-      <div class="hero-meta">
-        <div class="meta-item">
-          <p>Client</p>
-          <p>Refined Build Construction</p>
-        </div>
-        <div class="meta-item">
-          <p>Role</p>
-          <p>UI/UX Designer & Frontend Developer</p>
-        </div>
-        <div class="meta-item">
-          <p>Stack</p>
-          <p>React · TypeScript · Vite · Tailwind CSS</p>
-        </div>
-        <div class="meta-item">
-          <p>Focus</p>
-          <p>Lead Generation · Responsive Design</p>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="../index.html" class="brand">Mikee Dorol</a>
+      <a href="../index.html#projects" class="back">Back to projects</a>
     </div>
-  </section>
+  </header>
 
-  <!-- OVERVIEW -->
-  <div class="section fade-up">
-    <div class="section-label">Overview</div>
-    <h2 class="section-title">A luxury brand, built to convert.</h2>
-    <p class="section-body">
-      Refined Build Construction needed a website that matched the quality and prestige of their work. The goal wasn't just to look premium — it was to guide visitors toward taking action: booking a consultation, requesting a quote, or reaching out directly.
-    </p>
-    <div class="overview-grid">
-      <div class="overview-cell">
-        <p class="overview-cell-label">Industry</p>
-        <p class="overview-cell-value">Construction & Real Estate Development</p>
+  <main>
+    <section class="hero cs-hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="cs-kind">Case study: Construction company website</p>
+          <h1>Refined Build</h1>
+          <p class="lead">A website concept for a high-end construction brand. I wanted it to feel premium while guiding visitors toward one clear action: getting in touch.</p>
+          <div class="actions">
+            <a href="https://refined-build.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="#process" class="btn btn-ghost">How I built it</a>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt>Type</dt><dd>Personal practice project</dd></div>
+          <div><dt>Role</dt><dd>Designer and frontend developer</dd></div>
+          <div><dt>Stack</dt><dd>React, TypeScript, Vite, Tailwind CSS</dd></div>
+          <div><dt>Focus</dt><dd>Layout, hierarchy, responsive design</dd></div>
+        </dl>
       </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Project Type</p>
-        <p class="overview-cell-value">Corporate Website — Full Design & Development</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Timeline</p>
-        <p class="overview-cell-value">Design to deployment, iterative build process</p>
-      </div>
-      <div class="overview-cell">
-        <p class="overview-cell-label">Deliverables</p>
-        <p class="overview-cell-value">Responsive website · UI Design · Live Deployment via Vercel</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- CHALLENGE -->
-  <div class="section fade-up">
-    <div class="section-label">The Challenge</div>
-    <h2 class="section-title">Clean UX for lead generation.</h2>
-    <div class="challenge-layout">
-      <div class="challenge-quote">
-        "Construction companies often have cluttered, outdated websites. Refined Build needed to feel different — trustworthy, modern, and easy to act on."
-      </div>
-      <div class="section-body" style="max-width: 100%; color: #ffffff;">
-        <p style="margin-bottom: 1rem;">The primary challenge was translating a high-end construction brand into a digital experience that felt premium without being cold or inaccessible.</p>
-        <p style="margin-bottom: 1rem;">Visitors needed to immediately understand what the company does, feel confident in their quality, and find it easy to get in touch — all within the first scroll.</p>
-        <p>Every design decision was made with one question in mind: <em style="color: #ffffff; font-style: normal; font-weight: 500;">does this make it easier for a potential client to say yes?</em></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SCREENSHOTS -->
-  <div class="section fade-up">
-    <div class="section-label">Visual Design</div>
-    <h2 class="section-title">Sections of the site.</h2>
-    <div class="screenshot-slots">
-      <div class="screenshot-slot">
-        <img src="/images/hero-img-refined-build.png" alt="Refined Build Hero" onerror="this.style.display='none'">
-        <span class="slot-label">Hero Section</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="/images/services-img-refined-build.png" alt="Services" onerror="this.style.display='none'">
-        <span class="slot-label">Services Section</span>
-      </div>
-      <div class="screenshot-slot">
-        <img src="/images/mobile-view.png" alt="Mobile View" onerror="this.style.display='none'">
-        <span class="slot-label">Mobile View</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROCESS -->
-  <div class="section fade-up">
-    <div class="section-label">Process</div>
-    <h2 class="section-title">How I approached it.</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-num">01</span>
-        <div class="step-content">
-          <h3>Discovery & Brand Direction</h3>
-          <p>Started by understanding the client's target audience — high-end property developers and homeowners. Defined a visual direction: refined minimalism with strong typography and a natural, earthy palette that communicates trust and permanence.</p>
+    <section class="section">
+      <div class="wrap split">
+        <h2>The challenge</h2>
+        <div class="prose">
+          <p class="quote">Construction websites are often cluttered and outdated. This one needed to feel trustworthy, modern, and easy to act on.</p>
+          <h3 style="margin-bottom:12px">Making a premium brand easy to act on.</h3>
+          <p>The main challenge was turning a high-end construction brand into a page that feels premium without feeling cold. A visitor should understand what the company does, trust its quality, and see how to get in touch within the first scroll.</p><p>I checked every decision against one question: does this make it easier for a visitor to reach out?</p>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">02</span>
-        <div class="step-content">
-          <h3>Layout & Content Hierarchy</h3>
-          <p>Mapped out the user journey from landing to conversion. Each section was structured to answer a specific question a potential client might have — who you are, what you build, how you work, and why to trust you.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="shots-band" style="background:linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 60%,#e8d5c4 100%)"><div class="shots"><figure><img src="../images/hero-img-refined-build.png" alt="Refined Build hero section" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Hero section</figcaption></figure><figure><img src="../images/services-img-refined-build.png" alt="Refined Build services section" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Services section</figcaption></figure><figure><img src="../images/mobile-view.png" alt="Refined Build mobile view" loading="lazy" onerror="this.closest('figure').remove()" /><figcaption>Mobile view</figcaption></figure></div></div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="wrap split"><h2>Process</h2><ol class="steps"><li><h3>Direction and audience</h3><p>I defined the audience (property developers and homeowners) and a direction of refined minimalism: strong typography and an earthy palette.</p></li><li><h3>Layout and hierarchy</h3><p>I mapped the journey from landing to contact. Each section answers one question: who they are, what they build, how they work, why to trust them.</p></li><li><h3>Component build</h3><p>Built with React, TypeScript and Vite. Tailwind handles styling and Framer Motion handles interactions, with consistent spacing across components.</p></li><li><h3>Responsive refinement</h3><p>I tested on mobile, tablet and desktop, tuned type scale and padding per breakpoint, then deployed to Vercel.</p></li></ol></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>Tech stack</h2><ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>React Router</li><li>Vercel</li><li>Figma</li></ul></div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split"><h2>What I delivered</h2><ul class="outcome"><li>A responsive site that works on mobile, tablet and desktop</li><li>Clear ways to get in touch throughout the page</li><li>Deployed and live on Vercel</li></ul></div>
+    </section>
+
+    <section class="section cs-cta">
+      <div class="wrap">
+        <div class="ojt">
+          <div><h2>See it live</h2><p>Open the deployed project or go back to my other work.</p></div>
+          <div class="links">
+            <a href="https://refined-build.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">Live demo</a>
+            <a href="../index.html#projects" class="btn btn-ghost">Back to projects</a>
+          </div>
         </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">03</span>
-        <div class="step-content">
-          <h3>UI Design & Component Build</h3>
-          <p>Built using React + TypeScript with Vite for fast development. Tailwind CSS for utility-first styling with custom design tokens. Focused on consistent spacing, responsive breakpoints, and smooth interactions using Framer Motion.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <span class="step-num">04</span>
-        <div class="step-content">
-          <h3>Responsive Refinement & Deployment</h3>
-          <p>Tested across mobile, tablet, and desktop. Fine-tuned typography scales, button sizing, and section padding for every breakpoint. Deployed to Vercel with custom domain configuration and performance optimization.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <!-- TECH STACK -->
-  <div class="section fade-up">
-    <div class="section-label">Tech Stack</div>
-    <h2 class="section-title">Built with the right tools.</h2>
-    <p class="section-body">Chosen for performance, developer experience, and long-term maintainability.</p>
-    <div class="stack-grid">
-      <span class="stack-tag">React</span>
-      <span class="stack-tag">TypeScript</span>
-      <span class="stack-tag">Vite</span>
-      <span class="stack-tag">Tailwind CSS</span>
-      <span class="stack-tag">Framer Motion</span>
-      <span class="stack-tag">React Router</span>
-      <span class="stack-tag">Vercel</span>
-      <span class="stack-tag">Figma</span>
-    </div>
-  </div>
-
-  <!-- RESULTS -->
-  <div class="section fade-up">
-    <div class="section-label">Outcome</div>
-    <h2 class="section-title">What was delivered.</h2>
-    <p class="section-body">A fully responsive, production-ready website designed to attract and convert high-value construction clients.</p>
-    <div class="results-grid">
-      <div class="result-cell">
-        <div class="result-num">100%</div>
-        <div class="result-label">Responsive across all screen sizes</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">4</div>
-        <div class="result-label">Clear conversion touchpoints across the site</div>
-      </div>
-      <div class="result-cell">
-        <div class="result-num">Live</div>
-        <div class="result-label">Deployed on Vercel with fast load times</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-section fade-up">
-    <div class="cta-text">
-      <h2>See it live.</h2>
-      <p>Visit the deployed project or go back to the full portfolio.</p>
-    </div>
-    <div class="cta-links">
-      <a href="https://refined-build.vercel.app/" target="_blank" class="btn-primary">
-        Live Preview
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
-      <a href="/index.html" class="btn-secondary">
-        ← Back to Portfolio
-      </a>
-    </div>
-  </div>
-
-  <script src="../script.js">
-  </script>
+  <footer class="footer"><div class="wrap">© 2026 Mikee Dorol. Designed and coded by me.</div></footer>
 </body>
 </html>
